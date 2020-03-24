@@ -1,0 +1,7 @@
+#ignore .pyc files
+**/__pycache__/*
+#ignore database + migrations
+**/migrations/*
+**db.*
+/snippets
+/static
