@@ -28,9 +28,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = config.get('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['77.254.2580.96', 'bloglive.ltd']
 
 # Application definition
 
@@ -139,5 +139,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBacked'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_USER = config.get('EMAIL_USER')
-EMAIL_PASSWORD = config.get('EMAIL_PASS')
+EMAIL_HOST_USER = config.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = config.get('EMAIL_PASS')
